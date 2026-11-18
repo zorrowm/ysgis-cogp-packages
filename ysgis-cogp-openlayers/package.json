@@ -1,0 +1,29 @@
+{
+  "name": "ysgis-cogp-openlayers",
+  "version": "0.1.0",
+  "description": "Cloud Optimized GeoParquet source for OpenLayers.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "ysgis-cogp-core": "workspace:*"
+  },
+  "peerDependencies": {
+    "ol": "^10.11.0"
+  },
+  "devDependencies": {
+    "ol": "^10.7.0",
+    "typescript": "^5.6.0"
+  }
+}

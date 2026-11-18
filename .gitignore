@@ -1,0 +1,8 @@
+node_modules/
+.pnpm-store/
+.npm-cache/
+dist/
+*.tgz
+artifacts/
+playwright-report/
+test-results/

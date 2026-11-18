@@ -1,0 +1,481 @@
+{
+  "upstream": "https://github.com/Kanahiro/cloud-optimized-geoparquet",
+  "commit": "44f29be34d303fbb1febb154413a5aa7aa568a91",
+  "hyparquetCommit": "9365a88f34a0816b9a77e08c176ca0c480d3524c",
+  "entries": [
+    {
+      "source": "js/packages/reader/src/abort.ts",
+      "target": "ysgis-cogp-core/src/abort.ts",
+      "sha256": "5c86030826208a8d0a9cae71a01d3309b90e0e936753b7772bc97a78e18ad8b9",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/src/arrow-ipc.ts",
+      "target": "ysgis-cogp-core/src/arrow-ipc.ts",
+      "sha256": "c11ed7ca7f9c713ee69d4528ac888de4d13121411da4c53fc8fbe7c65b8a026c",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/src/bbox.ts",
+      "target": "ysgis-cogp-core/src/bbox.ts",
+      "sha256": "c7bf018ca11fffb9192400ff5e055df650fca691bb528c208056e0dae816248f",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/src/clip.ts",
+      "target": "ysgis-cogp-core/src/clip.ts",
+      "sha256": "a10df6a55e5a06fa488ee00d64b5ac9b2cc460985d380a700517f011dbfb1617",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/src/coalescing-buffer.ts",
+      "target": "ysgis-cogp-core/src/coalescing-buffer.ts",
+      "sha256": "03bddff5561ac5920a3e51b564881cd57b28a8e6445e18fff7d2c3474304ea4b",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/src/column-projection.ts",
+      "target": "ysgis-cogp-core/src/column-projection.ts",
+      "sha256": "ee403ef155c68dc4595474878942d36ac735fc4d54c1b164a8523ea940d5267c",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/src/geoarrow.ts",
+      "target": "ysgis-cogp-core/src/geoarrow.ts",
+      "sha256": "543a9ee5ad7415d978f93e90e510982fa0a1910803e83dc71fcf528b86226900",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/src/geometry.ts",
+      "target": "ysgis-cogp-core/src/geometry.ts",
+      "sha256": "f51cd60fa53cebb3ada47dfc2cf4c82f5d2239de04dc5c0e187acde60806d3a0",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/src/http-buffer.ts",
+      "target": "ysgis-cogp-core/src/http-buffer.ts",
+      "sha256": "f7b6974e8b79f8d31546a67c5380f27c23dd2e3932f6510e725379cfa6027f08",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/src/index.ts",
+      "target": "ysgis-cogp-core/src/index.ts",
+      "sha256": "f8bbd444cdcb438b414b8a0f84ded297834363704f81ac08b45e24de5c3c234a",
+      "unchanged": false
+    },
+    {
+      "source": "js/packages/reader/src/level.ts",
+      "target": "ysgis-cogp-core/src/level.ts",
+      "sha256": "66bc97b5250ac1f28bf1c9e6888771d79227925241e715ae47cafb21c6e9a5ad",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/src/lineclip.d.ts",
+      "target": "ysgis-cogp-core/src/lineclip.d.ts",
+      "sha256": "ace9af0cf4ac482641fcc332b2c07b251452f10a7fb2e7a5f990ca637d36f332",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/src/meta.ts",
+      "target": "ysgis-cogp-core/src/meta.ts",
+      "sha256": "970ba23a2d7971af1a41735306d192700b647847bcdf02212a507fac39b8a885",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/src/mvt.ts",
+      "target": "ysgis-cogp-core/src/mvt.ts",
+      "sha256": "4c6942a0089f99a0d4a37963271c43854ac582d35fc9a81c5545c04f28cbf6b9",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/src/overview.ts",
+      "target": "ysgis-cogp-core/src/overview.ts",
+      "sha256": "eb3376882abbf253156fdc5c038503339b381678acd6d1a900f6c6461007613a",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/src/page-index-cache.ts",
+      "target": "ysgis-cogp-core/src/page-index-cache.ts",
+      "sha256": "dcfd3a29e2dfeca07c9485155f28b9b5521d13bc6e9770b96f08082c868553cb",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/src/properties.ts",
+      "target": "ysgis-cogp-core/src/properties.ts",
+      "sha256": "3c85f258d6004395c5a8aa28d6f15a89d744cfdacee3117db0c2d3962cb6404a",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/src/range-cache.ts",
+      "target": "ysgis-cogp-core/src/range-cache.ts",
+      "sha256": "d942ebee836b4f2208232f4c7c916f885810e2819eba2216c8aa57c15e7d999e",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/src/reader.ts",
+      "target": "ysgis-cogp-core/src/reader.ts",
+      "sha256": "83380e2ac4950a685e6d414291fdd98b6736866ecec3bce715466b5ad6b7db8f",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/src/shared-lru.ts",
+      "target": "ysgis-cogp-core/src/shared-lru.ts",
+      "sha256": "d567993982a6dfc8a6ea8b4b8587985a6ea44de4051fbd811901ab00be70e36d",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/LICENSE",
+      "target": "ysgis-cogp-core/vendor/hyparquet/LICENSE",
+      "sha256": "3046ba3df9b8515f927e9d457f52baf93b172203b7b239f0fa9030d3ffc0c3cf",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/README.md",
+      "target": "ysgis-cogp-core/vendor/hyparquet/README.md",
+      "sha256": "ac5848de94fd7de5351fe4f5e9b19fdd52cf9769014b0f822a796f6b49c3c2e8",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/assemble.d.ts",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/assemble.d.ts",
+      "sha256": "3d820d7175008ba64e0275f6191e5223090f4e3e3caa493b01a48e83ac72b41f",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/assemble.js",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/assemble.js",
+      "sha256": "3a0ce8a565baa37d78ab1286598a31fe91e87145d8983a855ce0508aa2205852",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/bloom.d.ts",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/bloom.d.ts",
+      "sha256": "8d72e90f46dfc0a9082d83bf9845d410c1ef05a31d6bd050a59409ed0ad8e0e6",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/bloom.js",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/bloom.js",
+      "sha256": "63a941ef183ef01f8c4720758366b5fb7c4dc015e316998877b1bed6069d197e",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/column.d.ts",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/column.d.ts",
+      "sha256": "4ed5b6a55bc96d600e01704bf19d2fa1f744f58dd8d195834cad46e4b9523026",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/column.js",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/column.js",
+      "sha256": "e321b67f511bbc05498a7bf45bad57145cb7d4207e4bea0dd16c4b58cb9b40d0",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/columnview.d.ts",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/columnview.d.ts",
+      "sha256": "a1fe7c132b560a6019df146deb5824fb0028d2883c3e16272ce84d8da8569fcb",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/columnview.js",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/columnview.js",
+      "sha256": "d4cccd0ad965eafbc6872292465f1307f952aacefe6fbb04e61b1a2d793424bb",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/constants.d.ts",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/constants.d.ts",
+      "sha256": "66abc9cae08b237d24d30e7f810a214ca759cb0c241813e1da52a9f3b94e8085",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/constants.js",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/constants.js",
+      "sha256": "fba8101e75b19d3b0fcdd9af1388a416be02bc71d7077ecfd2362ae7034385e3",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/convert.d.ts",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/convert.d.ts",
+      "sha256": "7af88292a386097cd7648718905ce72814e84a04cc24923164fff178be166183",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/convert.js",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/convert.js",
+      "sha256": "017636f7992d9b410c4516a688c64d5cafbb721f9d0477241eb1775f06ba2e87",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/datapage.d.ts",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/datapage.d.ts",
+      "sha256": "93662e56ec7886abb3c80ea8f68540b39209c7781d36983dcdaa668bde372a08",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/datapage.js",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/datapage.js",
+      "sha256": "4df6896f6b11fa146f487a1ee92313841f48a7067cc6889e575af40448bb3d51",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/delta.d.ts",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/delta.d.ts",
+      "sha256": "41c5599cbda49191f1a6b033682e541ea92d731f6dffc5b3c90d577c299bfc51",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/delta.js",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/delta.js",
+      "sha256": "bea4b9d16bef5f722146093715313756800b65d3eeb2ac9a0897f9ea99430671",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/encoding.d.ts",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/encoding.d.ts",
+      "sha256": "1ffa7047dc8fca91b7becf435e63c6ae2301757222fb95f7a0bec2bef9f91153",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/encoding.js",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/encoding.js",
+      "sha256": "e99e09fb3edd46260fdc6e297260713531c5d42b51cfc782914ce14ee807b98d",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/filter.d.ts",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/filter.d.ts",
+      "sha256": "3cb898b0440c6966ecb612d310f1fe4489940d807aacaa03fae0bf62ddbf57b5",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/filter.js",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/filter.js",
+      "sha256": "17c686129e7c83253bb1be3d9236c34fb2433ffa3f6e5567c1a7c64892b11ebf",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/geoparquet.d.ts",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/geoparquet.d.ts",
+      "sha256": "c7c02bf931135cd0e4136feef5b7c473afb4f1a0364b596ce02487a15d55462a",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/geoparquet.js",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/geoparquet.js",
+      "sha256": "046e37b3dc8f87b9fea13882263e0275bc7e69998d7a5ff398b6056a8d6837f8",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/index.d.ts",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/index.d.ts",
+      "sha256": "f7239e024cfef6ad166532a8fbdd7686276393f702bed48ef40aa20a951b8c96",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/index.js",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/index.js",
+      "sha256": "0cdefd272359c1538f03df3d608ed6fe89785d053c4703cd5932a27cdac02b58",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/indexes.d.ts",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/indexes.d.ts",
+      "sha256": "8ef60c784975a0ae7245fbd71857893916f746be1eff003a86af40058aa6ef0e",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/indexes.js",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/indexes.js",
+      "sha256": "97480b75e7488bfe175ba883942cbf7daaef337ae8a8252b601cdfac57fd6c10",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/metadata.d.ts",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/metadata.d.ts",
+      "sha256": "58a919c8093b51d03feee6163c2950780687a6fc2726d22586af91c17e148edf",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/metadata.js",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/metadata.js",
+      "sha256": "f6af20a1d98ac0647f8e8613a5aa545c72c994a25eed17f2a09e0548781c202b",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/node.d.ts",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/node.d.ts",
+      "sha256": "cce04c7731d32edd512a011f0108c456e7ae8ad8311e35c77f0807afa5041697",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/node.js",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/node.js",
+      "sha256": "3fd9c4a4ac08a55b9176f07bed809a6dd8964f316500d50caf2dd098f1b4841c",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/plain.d.ts",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/plain.d.ts",
+      "sha256": "39845e7122384912a47745bf42bece6b02589079d83e21a9a2a41b19e4b0196a",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/plain.js",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/plain.js",
+      "sha256": "34a2436e3e9863cbebbb8f3d60380a975b43d3cdc0212b9dabe84d8198267419",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/plan.d.ts",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/plan.d.ts",
+      "sha256": "6f9463d8327bc4ac275c697ee3880b6045b4a240a5f81592c280381be59ae163",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/plan.js",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/plan.js",
+      "sha256": "2c04bcb46472f5d6ca5a25c431b1b56f0e7faf8194d36f8d7f4633acf3218fab",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/query.d.ts",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/query.d.ts",
+      "sha256": "2f5777d8e0182e19cd539b4319f96dcd46f9b1297b8fee8db6981f81d6b2896a",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/query.js",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/query.js",
+      "sha256": "a9e9eae147f444339884148067d6e316c065b38d9fac9cb4b04b29c6a4c15682",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/read.d.ts",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/read.d.ts",
+      "sha256": "5181a2c95c527b72faee3af915343115d1dca5f99f1f9a8bd6e487e7c7ddfb84",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/read.js",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/read.js",
+      "sha256": "7a957fda566381294030d563dc539f86f11da8b9d0f72de8f2a54a8f0599c3fa",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/rowgroup.d.ts",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/rowgroup.d.ts",
+      "sha256": "6487de9500a95bc5e4eabc8d3bcec233e5ce09acfd7e087be2f247bc45eb42e9",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/rowgroup.js",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/rowgroup.js",
+      "sha256": "ba6f4761e47810ca34150e77a2c59b844836560387d2f19eae1d2dbe78aa5a1b",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/scan.d.ts",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/scan.d.ts",
+      "sha256": "30e03d6e42c216245e7ed06cc3f35a89648a63627de53af3b70815e19d32c74d",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/scan.js",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/scan.js",
+      "sha256": "795068dc104aa76362ce2787b691970dde8a551050695c654994effce0cc0ff6",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/schema.d.ts",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/schema.d.ts",
+      "sha256": "d1b449317e1b8fdf05a99cece2161c832bd5f5df54dc908fa7cf9dba0edd3fe3",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/schema.js",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/schema.js",
+      "sha256": "061627b9dfa96e11a19e3971897185f98bb65888b6c76630940b3bd85513c832",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/snappy.d.ts",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/snappy.d.ts",
+      "sha256": "0b91889d9ed43678b42296284e29cdce500f1599d8de3b878b25f2fdfd19ce4e",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/snappy.js",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/snappy.js",
+      "sha256": "a5ed481cc617fca15accccf0e6e6b06ccdb5ca7bc011d34f42b419e43714ad83",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/thrift.d.ts",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/thrift.d.ts",
+      "sha256": "ea3d41ca529dead7e538944945512cf47e017d4249fbedf615556a58b3a9f2c2",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/thrift.js",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/thrift.js",
+      "sha256": "7f6170af2c4cf0c443d92477f1492917e5205f9751e69460197869f248a90b7a",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/types.d.ts",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/types.d.ts",
+      "sha256": "4cc79bf5c2a14463dd29d959eb48312c622cb6b7000f3e3fa7e59940d5fbe288",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/utils.d.ts",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/utils.d.ts",
+      "sha256": "10a6d25b06de2f3088f18890b813922142c73fcdffcbeb4c2c0d46094ffb955b",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/utils.js",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/utils.js",
+      "sha256": "a693cfc0f4e46267c7deea411e3a7d81ddd7f07d05250e43d59c190b34a1bdf7",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/variant.d.ts",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/variant.d.ts",
+      "sha256": "4df4b17ddef151bac87fbbc16ff653226b81c3fb80f549f0855c318a8d3d033c",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/variant.js",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/variant.js",
+      "sha256": "e203c9e92994c73ca906e22cb1b13379127d28b381360bb9ffdedeb1da0ed982",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/wkb.d.ts",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/wkb.d.ts",
+      "sha256": "64608bbff5906d4a9e893f4bd526db5c7d39e7868272bbfa8c99dd5c6c6dbb35",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/wkb.js",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/wkb.js",
+      "sha256": "f921bf26d2c56d58b1fc59ea6a1cc1781682d9db2c815e5d035061ce3d5ddfbb",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/xxhash.d.ts",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/xxhash.d.ts",
+      "sha256": "ee648bcc81f5ed529a74c7b74f66a718b69ace287137764283f82c3d53259541",
+      "unchanged": true
+    },
+    {
+      "source": "js/packages/reader/vendor/hyparquet/src/xxhash.js",
+      "target": "ysgis-cogp-core/vendor/hyparquet/src/xxhash.js",
+      "sha256": "e4d476641e9647c9d08c95d8ca066c713d77acad8168c934c8b0098aaf2cca3e",
+      "unchanged": true
+    }
+  ]
+}

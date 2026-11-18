@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>COGP GIS</title>
+    <style>
+      * { box-sizing: border-box; }
+      body { margin: 0; height: 100dvh; display: grid; grid-template-rows: auto minmax(0, 1fr); font: 14px system-ui, sans-serif; color: #202124; background: #e1e5e8; }
+      header { display: grid; grid-template-columns: auto auto auto 1fr; align-items: center; gap: 8px 16px; padding: 6px 16px; border-bottom: 1px solid #cbd1d8; background: white; }
+      header strong { font-size: 16px; white-space: nowrap; }
+      select { min-width: 0; min-height: 44px; padding: 5px 8px; font: inherit; background: white; color: inherit; border: 1px solid #aab2bb; border-radius: 3px; }
+      #status { grid-column: -2 / -1; justify-self: end; font-variant-numeric: tabular-nums; white-space: nowrap; }
+      #map { width: 100%; height: 100%; min-width: 0; }
+      .cesium-viewer-bottom { display: none; }
+      @media (max-width: 520px) {
+        header { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); padding: 8px; gap: 6px 8px; }
+        #status { grid-row: 1; }
+        select { font-size: 16px; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <strong>COGP GIS</strong>
+      <select id="engine" aria-label="地图引擎">
+        <option value="openlayers">OpenLayers</option>
+        <option value="cesium">Cesium</option>
+        <option value="maplibre">MapLibre</option>
+        <option value="mars3d">Mars3D</option>
+      </select>
+      <select id="data" aria-label="示例数据">
+        <option value="pois">全球 POI</option>
+        <option value="cogp">本地 GeoParquet</option>
+      </select>
+      <span id="status" role="status">加载中</span>
+    </header>
+    <main id="map"></main>
+    <script type="module" src="/examples/main.ts"></script>
+  </body>
+</html>

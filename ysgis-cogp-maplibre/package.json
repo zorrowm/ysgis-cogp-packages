@@ -1,0 +1,35 @@
+{
+  "name": "ysgis-cogp-maplibre",
+  "version": "0.1.0",
+  "description": "MapLibre GL JS vector tile adapter for Cloud Optimized GeoParquet.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "ysgis-cogp-core": "workspace:*",
+    "@hpcc-js/wasm-zstd": "1.15.0"
+  },
+  "peerDependencies": {
+    "maplibre-gl": "^6.0.0"
+  },
+  "devDependencies": {
+    "@mapbox/vector-tile": "1.3.1",
+    "maplibre-gl": "^6.11.2",
+    "pbf": "3.3.0",
+    "typescript": "^5.6.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

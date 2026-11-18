@@ -1,0 +1,6 @@
+packages:
+  - ysgis-cogp-core
+  - ysgis-cogp-openlayers
+  - ysgis-cogp-cesium
+  - ysgis-cogp-mars3d
+  - ysgis-cogp-maplibre

@@ -1,0 +1,38 @@
+{
+  "name": "ysgis-cogp-packages",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.18.0",
+  "workspaces": [
+    "ysgis-cogp-core",
+    "ysgis-cogp-openlayers",
+    "ysgis-cogp-cesium",
+    "ysgis-cogp-maplibre",
+    "ysgis-cogp-mars3d"
+  ],
+  "scripts": {
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test",
+    "dev": "vite --host 127.0.0.1",
+    "build:examples": "vite build",
+    "test:browser": "node scripts/browser-test.mjs",
+    "test:browser:production": "node scripts/browser-test.mjs --production",
+    "test:packages": "node scripts/package-test.mjs"
+  },
+  "devDependencies": {
+    "@turf/turf": "7.4.0",
+    "cesium": "^1.147.0",
+    "maplibre-gl": "6.11.2",
+    "mars3d": "^3.12.1",
+    "mars3d-cesium": "1.146.0",
+    "ol": "^10.11.0",
+    "playwright": "^1.56.0",
+    "vite": "^6.4.0",
+    "ysgis-cogp-cesium": "workspace:*",
+    "ysgis-cogp-core": "workspace:*",
+    "ysgis-cogp-maplibre": "workspace:*",
+    "ysgis-cogp-mars3d": "workspace:*",
+    "ysgis-cogp-openlayers": "workspace:*"
+  }
+}
