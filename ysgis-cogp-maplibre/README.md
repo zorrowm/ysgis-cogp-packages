@@ -1,5 +1,19 @@
 # ysgis-cogp-maplibre
 
+<p><a href="https://www.npmjs.com/package/ysgis-cogp-maplibre"><img src="https://img.shields.io/npm/v/ysgis-cogp-maplibre?color=orange&logo=npm" /></a></p>
+
+> 将 Cloud Optimized GeoParquet 转为 MapLibre GL JS 矢量源，在模块 Worker 中读取 COGP 并生成 MVT。
+
+## 版本记录
+
+- v0.0.1 首个公开版本。
+
+## 安装
+
+```sh
+pnpm add ysgis-cogp-maplibre maplibre-gl
+```
+
 Use [Cloud Optimized GeoParquet](https://github.com/Kanahiro/cloud-optimized-geoparquet) as a MapLibre GL JS vector source. The adapter reads COGP in a module worker and produces vector tiles in the browser.
 
 ```sh

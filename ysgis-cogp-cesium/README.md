@@ -1,5 +1,19 @@
 # ysgis-cogp-cesium
 
+<p><a href="https://www.npmjs.com/package/ysgis-cogp-cesium"><img src="https://img.shields.io/npm/v/ysgis-cogp-cesium?color=orange&logo=npm" /></a></p>
+
+> Cesium 1.147 的视口驱动 COGP 图层，使用 Core Worker 和原生 CustomDataSource/Entity。
+
+## 版本记录
+
+- v0.0.1 首个公开版本。
+
+## 安装
+
+```sh
+pnpm add ysgis-cogp-cesium cesium
+```
+
 Cesium 1.147 的视口驱动 COGP 图层，使用 Core Worker 和原生 `CustomDataSource/Entity`。
 
 ```ts

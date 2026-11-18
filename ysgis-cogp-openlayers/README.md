@@ -1,5 +1,19 @@
 # ysgis-cogp-openlayers
 
+<p><a href="https://www.npmjs.com/package/ysgis-cogp-openlayers"><img src="https://img.shields.io/npm/v/ysgis-cogp-openlayers?color=orange&logo=npm" /></a></p>
+
+> 基于 OpenLayers 10 的 COGP VectorTileSource 适配器，按 XYZ 瓦片和视口读取 GeoParquet。
+
+## 版本记录
+
+- v0.0.1 首个公开版本。
+
+## 安装
+
+```sh
+pnpm add ysgis-cogp-openlayers ol
+```
+
 OpenLayers 10.11 的原生 `VectorTileSource`，使用 Core Worker 按 XYZ 瓦片读取 COGP。
 
 ```ts

@@ -1,6 +1,6 @@
 {
   "name": "ysgis-cogp-mars3d",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Cloud Optimized GeoParquet data source for Mars3D.",
   "license": "MIT",
   "type": "module",
@@ -10,9 +10,13 @@
       "import": "./dist/index.js"
     }
   },
-  "files": ["dist", "README.md", "LICENSE"],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.json && node ../scripts/obfuscate-dist.mjs",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "npm run build && node --test test/*.test.mjs"
   },

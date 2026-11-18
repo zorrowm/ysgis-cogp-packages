@@ -1,5 +1,19 @@
 # ysgis-cogp-core
 
+<p><a href="https://www.npmjs.com/package/ysgis-cogp-core"><img src="https://img.shields.io/npm/v/ysgis-cogp-core?color=orange&logo=npm" /></a></p>
+
+> 独立维护的 Cloud Optimized GeoParquet（COGP）读取内核，为各适配器提供统一 Reader、LoD、缓存及 Worker 运行时。
+
+## 版本记录
+
+- v0.0.1 首个公开版本。
+
+## 安装
+
+```sh
+pnpm add ysgis-cogp-core
+```
+
 独立维护的 COGP 读取内核，替代 `@cogp/reader`，保留 `CogpReader`、`toGeoJSON`、`toMvt`、`toGeoArrow` 等兼容 API，并提供跨引擎 Worker 会话。
 
 ```ts

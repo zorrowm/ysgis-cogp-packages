@@ -1,6 +1,6 @@
 {
   "name": "ysgis-cogp-core",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Cloud Optimized GeoParquet reader and cross-engine runtime.",
   "license": "MIT",
   "type": "module",
@@ -15,9 +15,17 @@
     },
     "./worker-entry": "./dist/worker-entry.js"
   },
-  "files": ["dist", "vendor", "README.md", "LICENSE", "THIRD_PARTY_NOTICES.md", "SOURCE_SYNC.md", "SOURCE_SYNC.json"],
+  "files": [
+    "dist",
+    "vendor",
+    "README.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md",
+    "SOURCE_SYNC.md",
+    "SOURCE_SYNC.json"
+  ],
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.json && node ../scripts/obfuscate-dist.mjs",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "npm run build && node --test test/*.test.mjs"
   },
@@ -32,5 +40,7 @@
     "pbf": "3.3.0",
     "apache-arrow": "^21.2.0"
   },
-  "engines": { "node": ">=18" }
+  "engines": {
+    "node": ">=18"
+  }
 }

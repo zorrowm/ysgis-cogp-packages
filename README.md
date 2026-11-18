@@ -1,6 +1,6 @@
 # ysgis-cogp
 
-Cloud Optimized GeoParquet 的 TypeScript 扩展，包含五个独立 ESM 包。
+Cloud Optimized GeoParquet 的 TypeScript 扩展，包含五个独立 ESM 包，当前版本为 0.0.1。
 
 | 包 | 职责 |
 |---|---|
@@ -11,6 +11,10 @@ Cloud Optimized GeoParquet 的 TypeScript 扩展，包含五个独立 ESM 包。
 | `ysgis-cogp-maplibre` | MapLibre GL JS COGP 协议与 MVT source adapter |
 
 Core 承接参考 `@cogp/reader` 的实现并独立维护，项目不依赖该 npm 包。参考代码、测试数据及第三方许可证见 `ysgis-cogp-core/SOURCE_SYNC.md` 和 `THIRD_PARTY_NOTICES.md`。
+
+## 发布构建
+
+各包版本统一为 `0.0.1`。`pnpm build` 会先生成 TypeScript 声明，再对 `dist` 下 JavaScript 做压缩和标识符混淆；构建关闭 source map/declaration map，并清理已有 `.map` 文件。
 
 ## 开发
 

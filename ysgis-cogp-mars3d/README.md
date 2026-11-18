@@ -1,5 +1,19 @@
 # ysgis-cogp-mars3d
 
+<p><a href="https://www.npmjs.com/package/ysgis-cogp-mars3d"><img src="https://img.shields.io/npm/v/ysgis-cogp-mars3d?color=orange&logo=npm" /></a></p>
+
+> 基于 Mars3D 的 Cloud Optimized GeoParquet 图层适配器，复用 Core Reader/Worker 并渲染到 GraphicLayer。
+
+## 版本记录
+
+- v0.0.1 首个公开版本。
+
+## 安装
+
+```sh
+pnpm add ysgis-cogp-mars3d mars3d mars3d-cesium
+```
+
 Cloud Optimized GeoParquet rendering for Mars3D. The adapter shares the `ysgis-cogp-core` reader/runtime with the OpenLayers and Cesium packages and renders geographic Point, MultiPoint, LineString, MultiLineString, Polygon, and MultiPolygon rows through a Mars3D `GraphicLayer`.
 
 ```ts
