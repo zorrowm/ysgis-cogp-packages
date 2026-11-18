@@ -11,7 +11,7 @@ for (const name of names) {
   run('pnpm pack --pack-destination ../artifacts/packages', path.join(root, name));
 }
 const smoke = await mkdtemp(path.join(root, 'artifacts/package-smoke-'));
-const dependencies = Object.fromEntries(names.map(name => [name, `file:../packages/${name}-0.1.0.tgz`]));
+const dependencies = Object.fromEntries(names.map(name => [name, `file:../packages/${name}-0.0.1.tgz`]));
 await writeFile(path.join(smoke, 'package.json'), JSON.stringify({
   private: true, type: 'module', dependencies: { ...dependencies, ol: '10.11.0', cesium: '1.147.0', 'maplibre-gl': '6.18.0', mars3d: '3.12.1', 'mars3d-cesium': '1.147.0', '@turf/turf': '7.4.0' },
 }, null, 2));

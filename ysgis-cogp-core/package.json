@@ -25,7 +25,7 @@
     "SOURCE_SYNC.json"
   ],
   "scripts": {
-    "build": "tsc -p tsconfig.json && node ../scripts/obfuscate-dist.mjs",
+    "build": "tsc -p tsconfig.json --emitDeclarationOnly && node ../scripts/vite-package-build.mjs",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "npm run build && node --test test/*.test.mjs"
   },

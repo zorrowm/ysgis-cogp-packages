@@ -14,7 +14,7 @@ Core 承接参考 `@cogp/reader` 的实现并独立维护，项目不依赖该 n
 
 ## 发布构建
 
-各包版本统一为 `0.0.1`。`pnpm build` 会先生成 TypeScript 声明，再对 `dist` 下 JavaScript 做压缩和标识符混淆；构建关闭 source map/declaration map，并清理已有 `.map` 文件。
+各包版本统一为 `0.0.1`。`pnpm build` 会先生成 TypeScript 声明，再由 Vite 的 `vite-plugin-bundle-obfuscator` 完成 JavaScript 压缩和标识符混淆；构建关闭 source map/declaration map，并清理已有 `.map` 文件。Vite 同时接入 `comlink` 与 `vite-plugin-comlink`，在主构建和 `worker.plugins` 中统一处理 Web Worker 编译，worker 输出使用 ES module 格式。
 
 ## 开发
 
