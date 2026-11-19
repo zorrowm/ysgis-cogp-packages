@@ -21,6 +21,7 @@ Core 承接参考 `@cogp/reader` 的实现并独立维护，项目不依赖该 n
 ```sh
 pnpm install
 pnpm build
+pnpm build:publish
 pnpm typecheck
 pnpm test
 pnpm dev

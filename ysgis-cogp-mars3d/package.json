@@ -27,9 +27,9 @@
     "mars3d": "^3.12.1"
   },
   "devDependencies": {
-    "mars3d": "^3.12.1",
-    "mars3d-cesium": "^1.146.0",
     "@turf/turf": "^7.4.0",
-    "typescript": "^5.6.0"
+    "mars3d": "^3.12.1",
+    "mars3d-cesium": "^1.147.0",
+    "typescript": "^7.0.2"
   }
 }

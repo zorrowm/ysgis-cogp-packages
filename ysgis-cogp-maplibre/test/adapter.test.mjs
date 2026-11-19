@@ -9,7 +9,8 @@ import { renderTile } from '../dist/tile.js';
 
 const require = createRequire(import.meta.url);
 const { VectorTile } = require('@mapbox/vector-tile');
-const Pbf = require('pbf');
+const { PbfReader: Pbf } = require('pbf');
+const toPlain = value => Object.fromEntries(Object.entries(value));
 
 async function fixtureReader(name) {
   const bytes = await readFile(new URL(`../../test-data/${name}.parquet`, import.meta.url));
@@ -120,7 +121,7 @@ test('multiple files become named MVT layers with projected properties', async (
   const properties = tile.layers.buildings.feature(0).properties;
   assert.deepEqual(Object.keys(properties).sort(), ['id', 'label', 'second']);
   assert.equal(tile.layers.roads.length > 0, true);
-  assert.deepEqual(tile.layers.roads.feature(0).properties, {});
+  assert.deepEqual(toPlain(tile.layers.roads.feature(0).properties), {});
 });
 
 test('omitted options read every attribute and leave row count unlimited', async () => {

@@ -4,3 +4,6 @@ packages:
   - ysgis-cogp-cesium
   - ysgis-cogp-mars3d
   - ysgis-cogp-maplibre
+minimumReleaseAgeExclude:
+  - maplibre-gl@6.19.0
+  - pbf@5.1.3

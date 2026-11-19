@@ -5,7 +5,8 @@ import { createRequire } from 'node:module';
 // Decode with the versions MapLibre GL uses.
 const require = createRequire(import.meta.url);
 const { VectorTile } = require('@mapbox/vector-tile');
-const Pbf = require('pbf');
+const { PbfReader: Pbf } = require('pbf');
+const toPlain = value => Object.fromEntries(Object.entries(value));
 
 import { clipLineString, clipPolygonRing, pointInBbox } from '../dist/clip.js';
 import { encodeGeometryRow, encodeMvtTile } from '../dist/mvt.js';
@@ -167,12 +168,12 @@ test('popup attributes survive MVT decoding with existing display formatting', (
   const layer = tile.layers.cogp;
   assert.equal(layer.length, 2);
   assert.equal(layer.feature(0).id, 42);
-  assert.deepEqual(layer.feature(0).properties, {
+  assert.deepEqual(toPlain(layer.feature(0).properties), {
     name: '東京都', count: '12', enabled: 'true', missing: '',
     large: '9007199254740993', date: '2026-01-01T00:00:00.000Z',
     nested: '{"items":[1,"2"]}', binary: '<bytes:2>', html: '<script>alert(1)</script>',
   });
-  assert.deepEqual(layer.feature(1).properties, layer.feature(0).properties);
+  assert.deepEqual(toPlain(layer.feature(1).properties), toPlain(layer.feature(0).properties));
   assert.deepEqual(layer.feature(0).loadGeometry(), layer.feature(1).loadGeometry());
   assert.equal(layer._keys.length, Object.keys(feature.properties).length);
   assert.equal(layer._values.length, Object.keys(feature.properties).length);
@@ -217,7 +218,7 @@ test('MVT nesting preserves grown buffers, UTF-8 attributes and exact output bou
   const tile = new VectorTile(new Pbf(new Uint8Array(data)));
   assert.equal(tile.layers.cogp.length, features.length);
   for (let i = 0; i < features.length; i++) {
-    assert.deepEqual(tile.layers.cogp.feature(i).properties, features[i].properties);
+    assert.deepEqual(toPlain(tile.layers.cogp.feature(i).properties), features[i].properties);
     assert.equal(tile.layers.cogp.feature(i).id, i + 1);
   }
   encodeMvtTile([{ ...geometry, properties: { other: 'different output' } }]);
@@ -237,7 +238,7 @@ test('direct Feature framing handles varint boundaries and safe-integer IDs', ()
   for (let i = 0; i < ids.length; i++) {
     const feature = tile.layers.cogp.feature(i);
     assert.equal(feature.id, ids[i]);
-    assert.deepEqual(feature.properties, features[i].properties);
+    assert.deepEqual(toPlain(feature.properties), features[i].properties);
     assert.equal(feature.loadGeometry()[0][0].x, 2048);
   }
   for (const id of [-1, Infinity, NaN, Number.MAX_SAFE_INTEGER + 1]) {
@@ -274,7 +275,7 @@ test('toMvt encodes WKB and quantized overview columns identically from columns'
   // Null geometries are skipped.
   assert.equal(a.layers.cogp.length, 1);
   assert.deepEqual(a.layers.cogp.feature(0).loadGeometry(), b.layers.cogp.feature(0).loadGeometry());
-  assert.deepEqual(a.layers.cogp.feature(0).properties, { name: 'a' });
+  assert.deepEqual(toPlain(a.layers.cogp.feature(0).properties), { name: 'a' });
   assert.equal(a.layers.cogp.feature(0).id, 3);
   // Off-tile rows are skipped; IDs and layer names are optional.
   assert.equal(decode(toMvt({ geometry: overview }, { z: 10, x: 0, y: 0, layer: 'roads' })).layers.roads, undefined);
