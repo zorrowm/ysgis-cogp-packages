@@ -45,3 +45,12 @@ await source.close();
 `source.dispose()` 遵循 OpenLayers 原生同步语义，`source.close()` 可等待异步 handle 释放。`refresh()` 取消在途请求、清空渲染缓存，并使用新 Reader 版本重开同一 URL。`client` 可注入多个图层及 Cesium 图层共享；source 不终止注入的 client。`cogperror` 事件携带 error，同时保留原生 tileloadstart/end/error。
 
 可透传 requestInit、rangePolicy、pageIndexCache、rangeCache、version 和 dataProjection。`useOverview: false` 可显式使用主几何。数据必须含有效 geo.lod，输入 CRS 需为经纬度。完整运行示例和浏览器测试在仓库根目录。
+
+
+
+
+## 示例
+
+![Openlayers调用](https://zorrowm.github.io/npm/cogp2.png)
+
+![Cesium调用](https://zorrowm.github.io/npm/cogp1.png)

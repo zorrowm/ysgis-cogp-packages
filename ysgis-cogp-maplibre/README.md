@@ -75,3 +75,10 @@ For optional metadata and diagnostics, `inspectCogp(url, signal?)` and `getCogpS
 ```sh
 pnpm --filter ysgis-cogp-maplibre test
 ```
+
+
+## 示例
+
+![Openlayers调用](https://zorrowm.github.io/npm/cogp2.png)
+
+![Cesium调用](https://zorrowm.github.io/npm/cogp1.png)

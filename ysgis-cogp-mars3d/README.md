@@ -30,3 +30,12 @@ The source data must use geographic `OGC:CRS84` coordinates. `heightMode: 'clamp
 When a viewport exceeds `maxRows` (10,000 by default), the layer tries coarser LoDs before truncating. Use `rowLimitPolicy: 'truncate'` to keep the requested LoD and apply the row limit directly. The `onLoad` callback reports the zero-based `level` and `requestedLevel`, and whether the final result was `truncated`.
 
 The package does not bundle Mars3D. Install `mars3d` and its normal `mars3d-cesium` peer in the application that owns the map.
+
+
+
+
+## 示例
+
+![Openlayers调用](https://zorrowm.github.io/npm/cogp2.png)
+
+![Cesium调用](https://zorrowm.github.io/npm/cogp1.png)

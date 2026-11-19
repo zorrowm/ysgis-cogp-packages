@@ -2,7 +2,7 @@
 
 <p><a href="https://www.npmjs.com/package/ysgis-cogp-core"><img src="https://img.shields.io/npm/v/ysgis-cogp-core?color=orange&logo=npm" /></a></p>
 
-> 独立维护的 Cloud Optimized GeoParquet（COGP）读取内核，为各适配器提供统一 Reader、LoD、缓存及 Worker 运行时。
+> 维护的 Cloud Optimized GeoParquet（COGP）读取内核，为各适配器提供统一 Reader、LoD、缓存及 Worker 运行时。
 
 ## 版本记录
 
@@ -13,8 +13,6 @@
 ```sh
 pnpm add ysgis-cogp-core
 ```
-
-独立维护的 COGP 读取内核，替代 `@cogp/reader`，保留 `CogpReader`、`toGeoJSON`、`toMvt`、`toGeoArrow` 等兼容 API，并提供跨引擎 Worker 会话。
 
 ```ts
 import { CogpReader, toGeoJSON, openCogp } from 'ysgis-cogp-core';
@@ -51,3 +49,11 @@ Core 直接读取默认 `rangePolicy: 'allow-full'`，Worker 默认 `'require'`�
 网络统计是每个 Reader 累计 Range 尝试数及实际经过 fetch 的响应体字节，不是每次读取独占统计；并发调用会共享累计计数。`truncated` 只说明行预算截断，不说明 bbox/LoD 结果是否包含全部业务要素。
 
 普通 GeoParquet、GeometryCollection、自动 CRS 重投影和 SQL 不在当前兼容范围内。`readTile` 要求经纬度 XY；必要时可通过 `dataProjection: 'OGC:CRS84'` 明确覆盖已验证的数据 CRS。
+
+
+
+## 示例
+
+![Openlayers调用](https://zorrowm.github.io/npm/cogp2.png)
+
+![Cesium调用](https://zorrowm.github.io/npm/cogp1.png)

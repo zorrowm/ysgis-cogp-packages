@@ -45,3 +45,12 @@ attach 后立即读视口，相机 moveEnd 防抖和 resize 后刷新；新请�
 默认 maxRows=10,000、maxCoordinates=1,000,000、maxEntities=20,000；超过坐标/实体预算时保留上一幅画面并调用 onError。当前聚焦 3D 模式，2D/Columbus View 暂停读取。`client` 可注入共享，destroy 不终止外部 client。认证、Range 策略与缓存选项同 Core。Cesium 本身的静态 Assets/Workers 需由宿主配置，仓库示例已提供本地资源服务。
 
 行预算默认采用 `rowLimitPolicy: 'coarsen'`：视口超限时尝试较粗的完整 LoD，最粗一级仍超限才截断。设为 `'truncate'` 可保留请求级别并直接限行。`onLoad` 的 `level` 和 `requestedLevel` 均从 0 开始；`truncated` 描述最终结果。
+
+
+
+
+## 示例
+
+![Openlayers调用](https://zorrowm.github.io/npm/cogp2.png)
+
+![Cesium调用](https://zorrowm.github.io/npm/cogp1.png)
